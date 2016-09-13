@@ -32,9 +32,8 @@ messages and contact details via registered email ID or via message.
 
 ##Screenshots:
 ![alt tag](/screenshots/walkWithMe1.JPG)
-screenshots/walkWithMe1.JPG
 
-![alt tag](/screenshots/walkWithMe3.jpg)
+![alt tag](/screenshots/walkWithMe3.JPG)
 ##Technology:
 - Front end: CSS, XHTML, HTML, Javascript, PHP
 - Back end: MySQL
