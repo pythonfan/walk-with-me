@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Walk with me</title>
+
+<script type="text/javascript">
+function chk()
+{
+  name=(document.getElementById('name')).value;
+  if(name=="")
+  {
+    alert("Enter Name");
+    err=1;
+  }
+  pwd=(document.getElementById('pwd')).value;
+  cpwd=(document.getElementById('cpw')).value;
+  if(pwd!=cpw)
+  {
+  alert("Please re-enter password correctly");
+  err=1;
+  }
+   em=(document.getElementById('email')).value;
+   var reg = /^([A-Za-z0-9])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if (reg.test(em) == false) 
+        {
+            alert('Invalid Email Address');
+            err=1;
+        }
+   if(err==1)
+   {
+     return false;
+   }
+}
+</script>
+
+
+</head>
+<body background="headgrass1.jpg">
+<center><h1><font color="003300">Walk with Me!</font></h1>
+<img src="graphics-walking-132772.gif"/>
+</br></br>
+<h1><font color="white">Sign Up</h1></br>
+<form action="two.php" method ="post" onsubmit="return chk();">
+<input type="text" name="name" placeholder="Name"></br>
+<input type="password" name="pwd" placeholder="Password"></br>
+<input type="password" name="cpw" placeholder="ConfirmPassword"></br>
+<input type="email" name="email" placeholder="Email"></br></br>
+<input type="submit" value="SignUp"></br></br>
+</form>
+</br>
+
+<h1>Log In</h1>
+<form action="sugglog.php" method="post">
+<input type="email" name="logem" placeholder="Email"/></br>
+<input type="password" name="lpwd" placeholder="Password"/></br></br>
+<input type="submit" value = "login"/>
+</form>
+</font>
+</center>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML> <html dir="ltr" lang="en-US">
+ <head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>Walk with me</title>
+
+<script type="text/javascript">
+function chk()
+{
+  name=(document.getElementById('name')).value;
+  if(name=="")
+  {
+    alert("Enter Name");
+    err=1;
+  }
+  pwd=(document.getElementById('pwd')).value;
+  cpwd=(document.getElementById('cpw')).value;
+  if(pwd!=cpw)
+  {
+  alert("Please re-enter password correctly");
+  err=1;
+  }
+   em=(document.getElementById('email')).value;
+   var reg = /^([A-Za-z0-9])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if (reg.test(em) == false) 
+        {
+            alert('Invalid Email Address');
+            err=1;
+        }
+   if(err==1)
+   {
+     return false;
+   }
+}
+</script>
+</head>
+<body>
+<link rel="stylesheet" href="transparantform.css" type="text/css" />
+<div id="container">
+	<form action="sugglog.php" method="post">
+	<center><h2><div class="login">LOGIN</div></h2></center>
+	
+	
+	<div class="username-field">
+		<h3><div class="username-text">Email:</div></h3>
+		<input type="text" name="logem" placeholder="Email"  />
+		
+	</div>
+	<div class="password-field">
+		<h3><div class="password-text">Password:</div></h3>
+		<input type="password" name="lpwd" placeholder="Password" />
+	</div>
+	
+	<center><input type="submit" name="submit" value="Login" /></center>
+	</form>
+</div>
+</body>
+</html>
