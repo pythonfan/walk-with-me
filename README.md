@@ -29,6 +29,11 @@ the confirmation, the contact details of both the users are exchanged.
 ## Notification:
 - The application provides users an option to receive confirmation
 messages and contact details via registered email ID or via message.
+
+##Screenshots:
+![alt tag](/screenshots/walkWithMe1.jpg)
+
+![alt tag](/screenshots/walkWithMe3.jpg)
 ##Technology:
 - Front end: CSS, XHTML, HTML, Javascript, PHP
 - Back end: MySQL
