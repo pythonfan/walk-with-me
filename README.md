@@ -31,7 +31,8 @@ the confirmation, the contact details of both the users are exchanged.
 messages and contact details via registered email ID or via message.
 
 ##Screenshots:
-![alt tag](/screenshots/walkWithMe1.jpg)
+![alt tag](/screenshots/walkWithMe1.JPG)
+screenshots/walkWithMe1.JPG
 
 ![alt tag](/screenshots/walkWithMe3.jpg)
 ##Technology:
